@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Refrigerator World</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Refrigerator World</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="products">
+        <h2>Our Products</h2>
+        <div class="product">
+            <img src="ref3.jpg" alt="Refrigerator Model 1">
+            <h3>Refrigerator Model 1</h3>
+            <p>A sleek and energy-efficient refrigerator for all your cooling needs.</p>
+          <p><strong>Price: $999</strong></p>
+            <button onclick="addToCart('Refrigerator Model 1', 999)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="ref2.jpg" alt="Refrigerator Model 2">
+            <h3>Refrigerator Model 2</h3>
+            <p>Advanced features and ample storage space to keep your food fresh.</p>
+           <p><strong>Price: $599</strong></p>
+            <button onclick="addToCart('Refrigerator Model 2', 599)">Add to Cart</button>
+        </div>
+        <!-- Add more product divs as needed -->
+    </section>
+   <div class="cart">
+        <h3>Shopping Cart</h3>
+        <ul id="cartItems">
+            <!-- Cart items will be added here using JavaScript -->
+        </ul>
+        <p>Total: $<span id="cartTotal">0</span></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Refrigerator World. All rights reserved.</p>
+    </footer>
+</body>
+</html>
